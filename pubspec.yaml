@@ -1,0 +1,57 @@
+name: islami
+
+description: Islami is a special phone app for Muslims. It helps you with your faith and makes it easy to learn about Islam. You can use it at home or anywhere you go, and it gives you lots of important Islamic stuff on your phone.
+
+publish_to:
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_native_splash: ^2.3.2
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  provider: ^6.0.5
+
+flutter_native_splash:
+  background_image: "assets/images/splash_screen.png"
+  background_image_dark: "assets/images/splash_screen_dark.png"
+
+  android_12:
+  image: assets/images/splash_screen.png
+  image_dark: assets/images/splash_screen_dark.png
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/files/
+    - assets/files/quran/
+
+  fonts:
+    - family: ElMessiri
+      fonts:
+        - asset: fonts/ElMessiri-Regular.ttf
+
+    - family: Inter
+      fonts:
+        - asset: fonts/Inter-Regular.ttf
+
+    - family: DecoType
+      fonts:
+        - asset: fonts/DTHULUTH.ttf
